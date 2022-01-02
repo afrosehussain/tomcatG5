@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Products details</title>
+	<style>
+		body{
+			font-family: Times;
+		}
+		form{
+			width: 400px;
+			margin: auto;
+			border: 1px solid;
+			padding: 10px;
+		}
+		input,textarea,select{
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+		<form method="POST" action="http://localhost:8090/5G5/products">
+			<h2>Products</h2>
+			<label style="background-color: lightgray;">Add Product</label><br>
+
+			<label>Product Name*</label><br>
+			<input type="text" name="product" required><br>
+
+			<label>Category*</label><br>
+			<select id="category" name="category" required>
+				<option value="laptop">Laptop</option>
+				<option value="desktop">Desktop</option>
+				<option value="phone">Phone</option>
+				<option value="tablet">Tablet</option>
+				<option value="watch">Watch</option>
+			</select><br>
+
+			<label>Description</label><br>
+			<textarea rows = "5" cols = "50" name = "description">
+         	</textarea><br>
+         	
+         	<input type="radio" name="option" value="None">
+			<label>None</label>
+			<input type="radio" name="option" value="image">
+			<label>Image</label>
+			<input type="radio" name="option" value="icon">
+			<label>Icon</label><br>
+
+			<label>Product Options</label><br>
+			<textarea rows = "3" cols = "50" name = "options">
+         	</textarea><br>
+
+         	<label>Price*</label><br>
+         	<input type="text" name="price" required><br>
+
+         	<label>Purchase summary</label><br>
+			<textarea rows = "5" cols = "50" name = "summary">
+         	</textarea><br>
+
+			<button type="submit">Submit</button>
+		</form>
+</body>
+</html>

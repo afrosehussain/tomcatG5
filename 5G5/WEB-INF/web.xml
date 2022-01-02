@@ -1,0 +1,35 @@
+<web-app>
+	<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>DemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SecondServlet</servlet-name>
+		<servlet-class>ColorServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ThirdServlet</servlet-name>
+		<servlet-class>LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FourthServlet</servlet-name>
+		<servlet-class>ProductsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SecondServlet</servlet-name>
+		<url-pattern>/color</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ThirdServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FourthServlet</servlet-name>
+		<url-pattern>/products</url-pattern>
+	</servlet-mapping>
+</web-app>
